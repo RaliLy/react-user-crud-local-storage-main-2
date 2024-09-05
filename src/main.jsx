@@ -5,9 +5,9 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
+    <React.StrictMode>
+        <BrowserRouter basename={import.meta.env.DEV ? "/" : "/react-user-crud-local-storage-main-2/"}>
+            <App />
+        </BrowserRouter>
+    </React.StrictMode>
 );
